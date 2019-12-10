@@ -1,22 +1,30 @@
 package com.example.assignment;
 
+// Imports Section
 import android.content.Context;
 import android.graphics.drawable.GradientDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.assignment.models.MemberList;
-
 import java.util.List;
 
+/*************************************
+ *
+ * Assignment        : Mobile Software Development CA
+ * Package           : com.example.assignment
+ * File              : MemberListRecyclerAdapter.java
+ * Author            : Eoghan Byrne
+ * Student number    : C17315336
+ * Last modified     : 10th December 2019
+ *
+ *************************************/
 
 public class MemberListRecyclerAdapter extends RecyclerView.Adapter<MemberListRecyclerAdapter.ViewHolder> {
 
-    //Interface for callbacks
+    // Interface for callbacks
     interface ActionCallback {
         void onLongClickListener(MemberList memberList);
     }
@@ -53,7 +61,7 @@ public class MemberListRecyclerAdapter extends RecyclerView.Adapter<MemberListRe
         notifyDataSetChanged();
     }
 
-    //View Holder
+    // View Holder
     class ViewHolder extends RecyclerView.ViewHolder implements View.OnLongClickListener {
         private TextView mNameTextView;
         private TextView mCategoryTextView;

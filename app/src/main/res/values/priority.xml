@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+-
+- Assignment        : Mobile Software Development CA
+- File              : priority.xml
+- Author            : Eoghan Byrne
+- Student number    : C17315336
+- Last modified     : 10th December 2019
+-
+-->
+
+<!-- Defined list items for the category dropdown -->
 <resources>
     <string-array name="categories">
         <item>Scout</item>

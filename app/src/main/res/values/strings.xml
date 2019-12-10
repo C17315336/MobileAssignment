@@ -1,3 +1,14 @@
+<!--
+-
+- Assignment        : Mobile Software Development CA
+- File              : strings.xml
+- Author            : Eoghan Byrne
+- Student number    : C17315336
+- Last modified     : 10th December 2019
+-
+-->
+
+<!-- Variables to be used throughout the application -->
 <resources>
     <string name="app_name">EJ2020</string>
     <string name="no_members">Currently there are no members</string>

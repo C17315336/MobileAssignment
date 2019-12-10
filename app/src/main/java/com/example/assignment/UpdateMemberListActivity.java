@@ -1,25 +1,32 @@
 package com.example.assignment;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.room.Room;
-
+// Imports Section
 import android.database.sqlite.SQLiteConstraintException;
 import android.os.Bundle;
-
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.assignment.R;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.room.Room;
 import com.example.assignment.db.AppDatabase;
 import com.example.assignment.db.MemberListDAO;
 import com.example.assignment.models.MemberList;
+
+/*************************************
+ *
+ * Assignment        : Mobile Software Development CA
+ * Package           : com.example.assignment
+ * File              : UpdateMemberListActivity.java
+ * Author            : Eoghan Byrne
+ * Student number    : C17315336
+ * Last modified     : 10th December 2019
+ *
+ *************************************/
 
 public class UpdateMemberListActivity extends AppCompatActivity {
 
@@ -41,7 +48,7 @@ public class UpdateMemberListActivity extends AppCompatActivity {
 
         // Get access to database
         mMemberListDAO = Room.databaseBuilder(this, AppDatabase.class, "db-members")
-                .allowMainThreadQueries()   //Allows room to do operation on main thread
+                .allowMainThreadQueries()
                 .build()
                 .getMemberListDAO();
 
@@ -52,10 +59,10 @@ public class UpdateMemberListActivity extends AppCompatActivity {
         mUpdateButton = findViewById(R.id.updateButton);
         mToolbar = findViewById(R.id.toolbar);
 
-        // Retrieve the particular to-do from database using id
+        // Retrieve the particular member from database using id
         MEMBERLIST = mMemberListDAO.getMemberListWithId(getIntent().getIntExtra(EXTRA_MEMBERLIST_ID, -1));
 
-        // Populate screen with data from to-do
+        // Populate screen with data from memberlist
         initViews();
     }
 
@@ -67,7 +74,7 @@ public class UpdateMemberListActivity extends AppCompatActivity {
 
         final int id = MEMBERLIST.id;
 
-        // Add listener to 'update' button
+        // Add listener to 'Update' button
         mUpdateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,7 +88,7 @@ public class UpdateMemberListActivity extends AppCompatActivity {
                     return;
                 }
 
-                // Create to-do object to store updated data
+                // Create member object to store updated data
                 MemberList memberList = new MemberList();
                 memberList.setCategory(category);
                 memberList.setName(name);

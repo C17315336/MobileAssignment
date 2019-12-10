@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+-
+- Assignment        : Mobile Software Development CA
+- File              : colors.xml
+- Author            : Eoghan Byrne
+- Student number    : C17315336
+- Last modified     : 10th December 2019
+-
+-->
+
+<!-- Defined color palette as displayed on the left -->
 <resources>
     <color name="colorPrimary">#99cb51</color>
     <color name="colorPrimaryDark">#4a7c3a</color>

@@ -1,22 +1,29 @@
 package com.example.assignment;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
-
+// Imports Section
 import android.database.sqlite.SQLiteConstraintException;
 import android.os.Bundle;
 import android.view.View;
-
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
-
-import com.example.assignment.R;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 import com.example.assignment.db.AppDatabase;
 import com.example.assignment.db.MemberListDAO;
 import com.example.assignment.models.MemberList;
 
+/*************************************
+ *
+ * Assignment        : Mobile Software Development CA
+ * Package           : com.example.assignment
+ * File              : CreateMemberListActivity.java
+ * Author            : Eoghan Byrne
+ * Student number    : C17315336
+ * Last modified     : 10th December 2019
+ *
+ *************************************/
 
 public class CreateMemberListActivity extends AppCompatActivity {
 
@@ -33,7 +40,7 @@ public class CreateMemberListActivity extends AppCompatActivity {
 
         // Get access to Room Database
         mMemberListDAO = Room.databaseBuilder(this, AppDatabase.class, "db-members")
-                .allowMainThreadQueries()   //Allows room to do operation on main thread
+                .allowMainThreadQueries()
                 .build()
                 .getMemberListDAO();
 
@@ -43,7 +50,7 @@ public class CreateMemberListActivity extends AppCompatActivity {
         mDetailEditText = findViewById(R.id.memberlist_edit_detail);
         mSaveButton = findViewById(R.id.saveButton);
 
-        // Add a listener to 'save' button
+        // Add a listener to 'Save' button
         mSaveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,7 +69,7 @@ public class CreateMemberListActivity extends AppCompatActivity {
                 memberList.setName(name);
                 memberList.setDetail(detail);
 
-                //Insert to database
+                // Insert to database
                 try {
                     mMemberListDAO.insert(memberList);
                     setResult(RESULT_OK);

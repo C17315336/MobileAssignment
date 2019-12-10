@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+-
+- Assignment        : Mobile Software Development CA
+- File              : activity_update_contact.xml
+- Author            : Eoghan Byrne
+- Student number    : C17315336
+- Last modified     : 10th December 2019
+-
+-->
+
+<!-- Main UI for Update Section -->
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"

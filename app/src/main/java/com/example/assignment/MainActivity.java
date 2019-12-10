@@ -1,26 +1,37 @@
 package com.example.assignment;
 
+// Imports Section
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
-
 import com.example.assignment.db.AppDatabase;
 import com.example.assignment.db.MemberListDAO;
 import com.example.assignment.models.MemberList;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import java.util.ArrayList;
 
-// This week using arraylist instead of linkedlist
+/*************************************
+ *
+ * Assignment        : Mobile Software Development CA
+ * Package           : com.example.assignment
+ * File              : MainActivity.java
+ * Author            : Eoghan Byrne
+ * Student number    : C17315336
+ * Last modified     : 10th December 2019
+ *
+ *************************************/
+
+/*
+ * Code heavily based of Lab work on ToDo List
+ */
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,18 +54,19 @@ public class MainActivity extends AppCompatActivity {
                 .build()
                 .getMemberListDAO();
 
-        // Depending on the category of member we want to give it a different colour
+        // Depending on the category of a member we give it a different colour
         int colors[] = {ContextCompat.getColor(this, R.color.colorAccent),
                 ContextCompat.getColor(this, R.color.colorAccent1),
                 ContextCompat.getColor(this, R.color.colorAccent2),
                 ContextCompat.getColor(this, R.color.colorAccent3)};
 
-        //Configure RecyclerView
+        // Configure RecyclerView
         mMemberListsRecyclerView = findViewById(R.id.contactsRecyclerView);
         mMemberListsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         // Create Adapter
         mMemberListRecyclerAdapter = new MemberListRecyclerAdapter(this, new ArrayList<MemberList>(), colors);
+
         // Launches update activity when user long-clicks item
         mMemberListRecyclerAdapter.addActionCallback(new MemberListRecyclerAdapter.ActionCallback() {
             @Override
@@ -68,8 +80,9 @@ public class MainActivity extends AppCompatActivity {
         });
         mMemberListsRecyclerView.setAdapter(mMemberListRecyclerAdapter);
 
-        // Include a FAB
+        // Include a Button
         mAddMemberListFloatingActionButton = findViewById(R.id.addContactFloatingActionButton);
+
         // Launches create activity when user clicks on it
         mAddMemberListFloatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,7 +105,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        // really just refreshing the screen after data changes
         if (requestCode == RC_CREATE_MEMBERLIST && resultCode == RESULT_OK) {
             loadMemberLists();
         } else if (requestCode == RC_UPDATE_MEMBERLIST && resultCode == RESULT_OK) {

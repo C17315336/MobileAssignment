@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+-
+- Assignment        : Mobile Software Development CA
+- File              : activity_main.xml
+- Author            : Eoghan Byrne
+- Student number    : C17315336
+- Last modified     : 10th December 2019
+-
+-->
+
+<!-- Main UI for Application -->
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,6 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- Top Toolbar -->
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -19,6 +31,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <!-- Recycler view -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/contactsRecyclerView"
         android:layout_width="match_parent"
@@ -27,6 +40,7 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
+    <!-- Floating button -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addContactFloatingActionButton"
         android:layout_width="wrap_content"
