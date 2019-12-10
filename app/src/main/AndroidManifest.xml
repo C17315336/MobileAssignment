@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+-
+- Assignment        : Mobile Software Development CA
+- File              : AndroidManifest.xml
+- Author            : Eoghan Byrne
+- Student number    : C17315336
+- Last modified     : 10th December 2019
+-
+-->
+
+<!-- Manifest for the Application -->
+<!-- launch splash first then main -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.assignment">
 
