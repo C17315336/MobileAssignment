@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EJ2020</string>
+    <string name="no_members">Currently there are no members</string>
+    <string name="menu_insert">Add Member</string>
+    <string name="menu_delete">Delete Member</string>
+    <string name="memberlist_name">Name</string>
+    <string name="memberlist_description">Delete Member</string>
+    <string name="memberlist_edit_name">Name</string>
+    <string name="memberlist_edit_detail">Details</string>
+    <string name="memberlist_edit_save">Save</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="title1">Contingent Members</string>
+    <string name="title2">Edit Member</string>
+    <string name="title3">Add Member</string>
+</resources>
