@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EJ2020</string>
+    <string name="menu_insert">Cuir Ball leis</string>
+    <string name="title3">Cuir Ball leis</string>
+    <string name="title1">Baill Theagmhasacha</string>
+    <string name="no_members">Faoi láthair níl aon bhall ann</string>
+    <string name="delete">Scrios</string>
+    <string name="memberlist_description">Scrios Ball</string>
+    <string name="menu_delete">Scrios Ball</string>
+    <string name="memberlist_edit_detail">Sonraí</string>
+    <string name="title2">Comhalta Eagarthóireachta</string>
+    <string name="memberlist_edit_name">Ainm</string>
+    <string name="memberlist_name">Ainm</string>
+    <string name="memberlist_edit_save">Sábháil</string>
+    <string name="update">Nuashonrú</string>
+</resources>

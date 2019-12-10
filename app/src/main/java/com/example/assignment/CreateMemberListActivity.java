@@ -1,4 +1,4 @@
-package com.example.assignment1;
+package com.example.assignment;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
@@ -12,9 +12,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.assignment1.db.AppDatabase;
-import com.example.assignment1.db.MemberListDAO;
-import com.example.assignment1.models.MemberList;
+import com.example.assignment.R;
+import com.example.assignment.db.AppDatabase;
+import com.example.assignment.db.MemberListDAO;
+import com.example.assignment.models.MemberList;
 
 
 public class CreateMemberListActivity extends AppCompatActivity {

@@ -1,9 +1,9 @@
-package com.example.assignment1.db;
+package com.example.assignment.db;
 
 import androidx.room.Database;
 import androidx.room.RoomDatabase;
 
-import com.example.assignment1.models.MemberList;
+import com.example.assignment.models.MemberList;
 
 
 @Database(entities = {MemberList.class}, version = 1)

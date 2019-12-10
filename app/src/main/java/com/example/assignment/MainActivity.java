@@ -1,4 +1,4 @@
-package com.example.assignment1;
+package com.example.assignment;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -10,11 +10,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.assignment.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import com.example.assignment1.db.AppDatabase;
-import com.example.assignment1.db.MemberListDAO;
-import com.example.assignment1.models.MemberList;
+import com.example.assignment.db.AppDatabase;
+import com.example.assignment.db.MemberListDAO;
+import com.example.assignment.models.MemberList;
 
 // This week using arraylist instead of linkedlist
 import java.util.ArrayList;

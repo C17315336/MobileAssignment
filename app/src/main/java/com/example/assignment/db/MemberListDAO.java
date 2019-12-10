@@ -1,4 +1,4 @@
-package com.example.assignment1.db;
+package com.example.assignment.db;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
@@ -6,7 +6,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.assignment1.models.MemberList;
+import com.example.assignment.models.MemberList;
 
 import java.util.List;
 
