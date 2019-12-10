@@ -14,4 +14,5 @@
     <string name="memberlist_name">Ainm</string>
     <string name="memberlist_edit_save">Sábháil</string>
     <string name="update">Nuashonrú</string>
+    <string name="search">" Cuardaigh"</string>
 </resources>

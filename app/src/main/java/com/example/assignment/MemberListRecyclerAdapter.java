@@ -1,17 +1,14 @@
 package com.example.assignment;
 
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Context;
 import android.graphics.drawable.GradientDrawable;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.TextView;
 
-import com.example.assignment.R;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.assignment.models.MemberList;
 
 import java.util.List;
@@ -88,10 +85,10 @@ public class MemberListRecyclerAdapter extends RecyclerView.Adapter<MemberListRe
                 mBackground.setColor(colors[2]);
                 mCategoryTextView.setText("I");
             } else if (category.equalsIgnoreCase("CMT")) {
-                mBackground.setColor(colors[2]);
+                mBackground.setColor(colors[3]);
                 mCategoryTextView.setText("C");
             } else {
-                mBackground.setColor(colors[3]);
+                mBackground.setColor(colors[4]);
                 mCategoryTextView.setText("O");
             }
         }

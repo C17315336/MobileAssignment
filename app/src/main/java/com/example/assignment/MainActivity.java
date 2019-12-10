@@ -1,24 +1,23 @@
 package com.example.assignment;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-
-import com.example.assignment.R;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import com.example.assignment.db.AppDatabase;
 import com.example.assignment.db.MemberListDAO;
 import com.example.assignment.models.MemberList;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import java.util.ArrayList;
 
 // This week using arraylist instead of linkedlist
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -97,4 +96,6 @@ public class MainActivity extends AppCompatActivity {
             loadMemberLists();
         }
     }
+
+
 }

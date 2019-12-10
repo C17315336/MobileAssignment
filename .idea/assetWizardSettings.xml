@@ -11,10 +11,25 @@
                   <entry key="vectorAssetStep">
                     <value>
                       <PersistentState>
+                        <option name="children">
+                          <map>
+                            <entry key="clipartAsset">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="url" value="jar:file:/private/var/folders/g0/v07gpsf11xgb70ns9xy793vr0000gn/T/AppTranslocation/8764F888-D8C7-4AC3-B7CD-1C90A6D3F47B/d/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_search_black_24dp.xml" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
                         <option name="values">
                           <map>
-                            <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_ej_02" />
+                            <entry key="color" value="ffffff" />
+                            <entry key="outputName" value="ic_search" />
                             <entry key="sourceFile" value="$USER_HOME$/Desktop/EJ-02.svg" />
                           </map>
                         </option>
