@@ -6,14 +6,14 @@ Completed by Eoghan Byrne (C17315336)
 
 ## Index
 
-[Overview](#overview)  
-[Classes](#classes)
-[Approach](#approach)
-[Reasoning](#reasoning)  
-[Tests](#tests)
-[Challenges](#challenges)  
-[Interesting Elements](#interestingelements)
-[Brief](#brief)
+-[Overview](#overview)
+-[Classes](#classes)
+-[Approach](#approach)
+-[Reasoning](#reasoning)
+-[Tests](#tests)
+-[Challenges](#challenges)
+-[Interesting Elements](#interesting-elements)
+-[Brief](#brief)
 
 ## Overview
 
